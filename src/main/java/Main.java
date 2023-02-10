@@ -1,5 +1,5 @@
-import java.util.Scanner;
-
+import java.util.*;
+import java.net.*;
 public class Main {
     public static void main(String[] args) {
 
@@ -15,9 +15,16 @@ public class Main {
     //See if they inputted a ticker or want to exit
     public static void continueOrExit(String ticker) {
         if (ticker.equals("EXIT")) {
-            System.out.println("Exit sequence initiated");
+            //Exit sequence
+            System.out.println("Thank you! Goodbye!");
         } else {
-            System.out.println("Ticket inputted: " + ticker);
+            //Make the API call
+            apiCAll(ticker);
         }
     }
-}
+
+    public static void apiCAll(String ticker) {
+       // System.out.println("API call for ticker: " + ticker);
+
+            }
+        }
